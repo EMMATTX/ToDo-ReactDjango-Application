@@ -27,11 +27,8 @@ export default function App()  {
       </div>
 
       <Container>
-        <div>
-          <ToDoForm />
-          <ToDoList todos={todos} />
-
-        </div>
+        <ToDoForm todos={todos} setTodos={setTodos} />
+        <ToDoList todos={todos} setTodos={setTodos} />
       </Container>
       
     </div> 

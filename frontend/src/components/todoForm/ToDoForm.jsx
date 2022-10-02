@@ -7,15 +7,22 @@ export default function ToDoForm() {
   const [name, setName] = useState("");
 
   const handleChange = e => {
-    setName(e.target.value)
+    setName(e.target.value);
   }
+
+
 
   return (
     <Form>
       <InputGroup className="mb-4">
-        <FormControl onChange={handleChange} value={name} placeholder="New Todo..."></FormControl>
-        <Button type="submit">Add</Button>
-
+        <FormControl 
+        onChange={handleChange} 
+        value={name} 
+        placeholder="New Todo..."
+        />
+        <Button type="submit">
+          Add
+        </Button>
       </InputGroup>
     </Form>
   )
