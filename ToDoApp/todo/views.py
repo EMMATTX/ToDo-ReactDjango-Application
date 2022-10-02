@@ -8,4 +8,5 @@ from .models import Todo
 
 class TodoViewSet(viewsets.ModelViewSet):
     serializer_class = TodoSerializer
-    QuerySet = Todo.objects.all()
+    queryset = Todo.objects.all()
+    
