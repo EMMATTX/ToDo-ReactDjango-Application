@@ -121,6 +121,7 @@ export default function ToDoList({ todos = [], setTodos }){
             Edit Todo
           </Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
           <FormControl value={record ? record.name : ""}
           onChange={handleChange}
@@ -138,3 +139,4 @@ export default function ToDoList({ todos = [], setTodos }){
 
 }
 
+export { default as ToDoList } from './ToDoList';

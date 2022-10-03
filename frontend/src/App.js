@@ -10,7 +10,6 @@ export default function App()  {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-  
     axios.get("/api/todos/")
       .then((res) =>{
         setTodos(res.data);
